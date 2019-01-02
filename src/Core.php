@@ -381,9 +381,9 @@ class Core
     {
         //加载之前，先清空原来的
         if($this->isDev){
-            $file  = EASYSWOOLE_ROOT.'/dev.php';
+            $file  = EASYSWOOLE_ROOT.'/dev.env';
         }else{
-            $file  = EASYSWOOLE_ROOT.'/produce.php';
+            $file  = EASYSWOOLE_ROOT.'/produce.env';
         }
         Config::getInstance()->loadEnv($file);
     }
